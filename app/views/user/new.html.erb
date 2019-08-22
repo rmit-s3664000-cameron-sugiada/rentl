@@ -1,11 +1,7 @@
 <div class="container text-center shadow p-3 mb-5 bg-white rounded" style="width: 35%">
   <div style="background-color: lightgrey; border-radius: 10px;">
-    <img src="<%= asset_path 'finger_print.png' %>" height="50" width="50" alt="finger logo" style='margin: 0 2% 1% 0%;'>
     <h1 style='display:inline;'>Sign up</h1>
   </div>
-
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: "form-group") do |f| %>
-    <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field text-left">
       <%= f.label :email %><br />
@@ -30,5 +26,4 @@
     </div>
   <% end %>
 
-  <%= render "devise/shared/links" %>
 </div>
